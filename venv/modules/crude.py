@@ -12,3 +12,14 @@ def create(conn, sql):
     cur = conn.cursor()
     cur.execute(sql)
     conn.commit()
+
+def update(conn, sql):
+    cur = conn.cursor()
+    cur.execute(sql)
+    conn.commit()
+
+def update(conn, sql):
+    cur = conn.cursor()
+    cur.execute(sql)
+    res = cur.fetchall()
+    print(res)
